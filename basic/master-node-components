@@ -1,0 +1,10 @@
+1 Kube-api:  frontend of the kubernetes control plain, authentication and authorization used to run kubernetes command.
+2 Kube-etcd: data store for kubernetes(cluster database) it contain all configuration of cluster. it store data in key: value format (YAML BASED)
+3 Kube-scheduler: watches for newly created Pods with no assigned node, and selects a best fit node for them to run on. 2 types : default 2.custom
+4 Kube-controller: provide api instruction to worker node.
+
+
+NOTE: 
+* api perform read write operation from etcd.
+* we only keep backup for etcd not for kube-api.
+
