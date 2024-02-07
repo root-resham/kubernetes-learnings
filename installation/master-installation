@@ -1,9 +1,10 @@
-there are two ways of installation of master
+there are two mode of installation of master
 1. Control plain mode(Container based installation) mostly used: every service will run in container
         i. api
        ii. controller
       iii. scheduler
        iv. etcd
+Note: kubelet and container service should have installed in this mode (this service can not be containerized)
 2. Systemd mode:(hardway installation)
 
 Installation of master control plain mode 
