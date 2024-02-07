@@ -1,0 +1,16 @@
+there are two ways of installation of master
+1. Control plain mode(Container based installation) mostly used: every service will run in container
+        i. api
+       ii. controller
+      iii. scheduler
+       iv. etcd
+2. Systemd mode:(hardway installation)
+
+Installation of master control plain mode 
+        Two ways
+          1. Utility(setup everything automatically):
+                i. Kubeadm
+               ii. KOPS
+              iii. ansible
+          2.manual
+
