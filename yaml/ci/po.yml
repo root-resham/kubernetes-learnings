@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  namespace: ci-cd
+  labels:
+    run: prosprr-frontend
+  name: prosprr-frontend
+spec:
+  containers:
+    - image: nginx
+      name: prosprr-frontend

@@ -1,0 +1,9 @@
+install docker or any containerization service
+install kubelet
+install kubeadm
+register worker node in masternode
+1. apiIP:portNumber
+2. api token (authentication)(uses only first time when master connect with worker)
+3. certificate (after authentication master communicate to worker through this certificate)
+
+kubeadm tokern create --print-join-command   # create token with join command run this command in worker node to join master node

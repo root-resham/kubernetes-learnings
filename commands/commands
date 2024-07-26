@@ -1,0 +1,5 @@
+kubectl get nodes # to get how many nodes in cluster
+kubectl get componentstatus # to check healt of components in cluster
+kubectl get pods -n kube-system    # list all pods in kube-system ns
+kubectl get ns    # list all namespace in cluster
+kubectl get pod -n kube-system -o wide # list all pods in kube-system ns with all info 

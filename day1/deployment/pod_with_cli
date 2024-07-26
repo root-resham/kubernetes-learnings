@@ -1,0 +1,20 @@
+create pod by cli
+kubectl run podname --image=nginx       # test = name
+kubectl get pods                   # list pods use -n namespace_name for list pods of any namespace
+kubectl get pods -o wide            # list pods with details
+kubectl exec                        #to login into cluster
+kubectl describe pods podname         # to get deep info about pod
+kubectl log podname                   # to get container log
+kubectl get events                    # to get api logs 
+kubectl delete pod podname -n namespacename       # delete pod from namespace
+kubectl get pods -A                   # list pods from all namespace or use this kubectl get pod --all-namespaces
+kubectl get nodes -o wide             # list all nodes with details
+kubectl run test --image=nginx -o yaml  # create test pod with nginx image with printing yaml file 
+kubectl run test --image=nginx -o yaml --dry-run    # print yaml file of creating test pod with nginx image without creating
+kubectl create -f filename.yaml         # create pod with yaml file 
+kubectl apt-resources                   # list api resources
+kubectl explain pod                     # explain about pod and their keywords and their types
+kubectl explain pod.metadata            # to check keywords inside keywords
+
+Note:every pod/deployment inside a namespace if you don't specify it will create inside default namespace
+if you want to run your command inside any perticular namespace update in .kube/config namespace: namespacename

@@ -1,11 +1,12 @@
 there are two mode of installation of master
 1. Control plain mode(Container based installation) mostly used: every service will run in container
-        i. api
+        i. api (port no6443)
        ii. controller
       iii. scheduler
-       iv. etcd
+       iv. etcd  (port no.2379)
 Note: kubelet and container service should have installed in this mode (this service can not be containerized)
 2. Systemd mode:(hardway installation)
+3. some organizations run etcd on seprate server & add that info in api conf file for communicate with etcd
 
 Installation of master control plain mode 
         Two ways
@@ -15,3 +16,15 @@ Installation of master control plain mode
               iii. ansible
           2.manual
 
+
+setting up master node using kubeadm:
+
+   i. container service 
+  ii. kubelet service
+ iii. kubeadm utility
+  iv. start 4 components using kubeadm (api/etc/scheduler/controller)
+   v. disable selinux (only on master node)
+  vi. swapon disabled
+ vii. install kubectl 
+
+ /etc/kubernetes/pki     ca.crt certificate 

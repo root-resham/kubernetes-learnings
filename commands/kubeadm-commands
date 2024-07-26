@@ -1,0 +1,4 @@
+kubeadm token list # list token
+kueadm token delete # to delete token
+kubeadm token create # to create token
+kubeadm tokern create --print-join-command   # create token with join command
